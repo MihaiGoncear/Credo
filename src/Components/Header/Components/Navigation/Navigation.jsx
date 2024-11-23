@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
-import { HEADER_NAV_LINKS } from "../../../../utils/constants";
 import { useLocation } from "react-router-dom";
 import NavLink from "./Components/NavLink";
-import useWindowSizes from "../../../../hooks/useWindowSizes";
-import useClickOutsideTarget from "../../../../hooks/useClickDocument";
+import useWindowSizes from "hooks/useWindowSizes";
+import useClickOutsideTarget from "hooks/useClickOutsideTarget";
+import { HEADER_NAV_LINKS } from "utils/constants";
 
 function Navigation() {
     const [isMenuActive, setIsMenuActive] = useState(false);

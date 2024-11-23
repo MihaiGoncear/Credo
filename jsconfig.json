@@ -1,15 +1,7 @@
 {
     "compilerOptions": {
-        "baseUrl": "src", // Set the root directory for module resolution
-        "paths": {
-            "*": ["*"] // Allow importing any module relative to `src`
-        }
-    },
-    "include": [
-        "src/**/*" // Include all files in the `src` directory and its subdirectories
-    ],
-    "exclude": [
-        "node_modules", // Exclude dependencies
-        "build" // Exclude build artifacts
-    ]
+        "baseUrl": "./src",
+        "checkJs": true,
+        "jsx": "react"
+    }
 }

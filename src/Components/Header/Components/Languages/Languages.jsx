@@ -1,14 +1,16 @@
 import React, { useRef, useState } from "react";
-import { LANGUAGES } from "../../../../utils/constants";
 import NavLang from "./Components/NavLang";
 import { useDispatch, useSelector } from "react-redux";
+import useClickOutsideTarget from "hooks/useClickOutsideTarget";
+import { LANGUAGES } from "utils/constants";
 import { setLanguage } from "../../../../redux/slices/languageSlice";
-import useClickOutsideTarget from "hooks/useClickDocument";
 
 function Languages() {
     const [isLanguageActive, setIsLanguageActive] = useState(false);
 
+    // @ts-ignore
     const currLanguage = useSelector((state) => state.language.language);
+
     const dispatch = useDispatch();
 
     const changeLanguage = (item) => {

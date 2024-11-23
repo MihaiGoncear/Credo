@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = { language: "rom" };
 
 const languageSlice = createSlice({
-    name: "alerts",
+    name: "language",
     initialState,
     reducers: {
         setLanguage(state, action) {
