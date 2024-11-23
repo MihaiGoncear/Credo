@@ -12,9 +12,13 @@ function Navigation() {
     const { isMobile } = useWindowSizes();
     const menuRef = useRef(null);
     useClickOutsideTarget(menuRef, setIsMenuActive);
+    console.log(isMenuActive);
 
     return (
-        <div className='header__navigation '>
+        <div
+            ref={menuRef}
+            className='header__navigation disable-selection'
+        >
             {isMobile && (
                 <div
                     className={`header__navigation--mobile ui__cols ui__display-justify-between ${
@@ -28,7 +32,6 @@ function Navigation() {
                 </div>
             )}
             <div
-                ref={menuRef}
                 className={`header__navigation--items ui__display-align-center ${
                     isMobile && !isMenuActive && "hidden"
                 }`}
