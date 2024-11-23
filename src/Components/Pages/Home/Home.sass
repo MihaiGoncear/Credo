@@ -1,6 +1,9 @@
 .home
     &__banner
         height: 670px
+        @media screen and (max-width: 760px)
+            height: 450px
+
         &--wrapper
             overflow: hidden
             .swiper-slide
@@ -25,6 +28,16 @@
                             100%
                                 left: 61%
                                 opacity: 1                                
+                        @keyframes appearMotto__mobile
+                            0%
+                                left: 0%
+                                opacity: 0                                
+                            30%
+                                left: 50%
+                                opacity: 1                                
+                            100%
+                                left: 50%
+                                opacity: 1                                
                                 
                         .motto
                             opacity: 0                                
@@ -33,17 +46,30 @@
                             color: var(--asphalt-color)
                             max-width: 760px
                             width: 100%
-                            left: 61%
                             transform: translate(-50%, -50%)
                             top: 20%
                             animation: appearMotto 4s forwards
                             background-color: #ffae0038
                             padding: 20px 25px
                             border-radius: 15px
+                            @media screen and (max-width: 1000px)
+                                font-size: 30px
+                                max-width: 580px
+                            @media screen and (max-width: 760px)
+                                background-color: #ffae009e
+                                animation: appearMotto__mobile 4s forwards
+                                font-size: 19px
+                                max-width: calc(100% - 15px)
+                                top: 20%
+                                padding: 20px 15px
                             span
                                 font-size: 50px
                                 font-weight: 600
                                 text-transform: uppercase
+                                @media screen and (max-width: 1000px)
+                                    font-size: 40px
+                                @media screen and (max-width: 760px)
+                                    font-size: 25px
                 &__services
                     height: 100%
                     width: 100%
@@ -52,34 +78,54 @@
                         background-color: #7b7b7bb3
                         padding: 40px 20px 40px 40px
                         border-radius: 15px
-                        width: fit-content
+                        width: 930px
                         position: absolute
                         left: 50%
                         top: 50%
                         transform: translate(-50%, -50%)
-
+                        @media screen and (max-width: 1000px)
+                            width: 550px
+                            max-width: calc(100% - 20px)
+                            padding: 40px 10px 40px 20px
+                        @media screen and (max-width: 760px)
+                            top: 40%
+                            padding: 35px 10px 25px 10px
+                            border-radius: 9px
                         .title
                             font-size: 50px
                             font-weight: 600
                             color: var(--white-color)
                             margin-bottom: 30px
                             margin-top: -20px
+                            @media screen and (max-width: 1000px)
+                                font-size: 35px
+                            @media screen and (max-width: 760px)
+                                margin-top: -30px
+                                margin-bottom: 15px
+                            
                         .item
                             font-size: 30px
                             position: relative
                             font-weight: 500
                             color: var(--yellow-color)
                             letter-spacing: 2px
+                            @media screen and (max-width: 1000px)
+                                font-size: 19px
+                            @media screen and (max-width: 760px)
+                                font-size: 17px
                             &::before
                                 content: "▶"
                                 margin-right: 20px
                         .item + .item
                             margin-top: 50px
-                    &--button
+                            @media screen and (max-width: 1000px)
+                                margin-top: 30px
+                            @media screen and (max-width: 760px)
+                                margin-top: 20px                            
+                        .button
                             position: absolute
-                            bottom: 30px
-                            left: 67%
-                            transform: translateX(-50%)
+                            bottom: -85px
+                            right: 30px
                             font-size: 27px
                             font-weight: 500
                             color: #233038
@@ -90,6 +136,12 @@
                             cursor: pointer
                             &:hover
                                 background-color: var(--white-color)
+                            @media screen and (max-width: 1000px)
+                                font-size: 21px
+                                bottom: -80px
+                            @media screen and (max-width: 760px)
+                                font-size: 17px
+                                bottom: -70px
                 &__contacts
                     height: 100%
                     width: 100%
@@ -104,9 +156,14 @@
                         font-size: 30px
                         border-radius: 10px
                         color: var(--asphalt-color)
+                        white-space: nowrap
                         cursor: pointer
                         &:hover
                             background-color: var(--white-color)
+                        @media screen and (max-width: 760px)
+                            bottom: 110px
+                        @media screen and (max-width: 400px)
+                            font-size: 22px
                     &--title
                         position: absolute
                         left: 50%
@@ -119,6 +176,16 @@
                         background-color: #fdfdfd8f
                         border-radius: 10px
                         padding: 10px 10px
+                        max-width: 900px
+                        width: 100%
+                        @media screen and (max-width: 1000px)
+                            font-size: 30px
+                            max-width: 650px
+                        @media screen and (max-width: 760px)
+                            font-size: 18px
+                            max-width: 390px
+                        @media screen and (max-width: 400px)
+                            max-width: calc(100% - 20px)
             .swiper-slide-visible
                 .banner__services
                     @keyframes appearService

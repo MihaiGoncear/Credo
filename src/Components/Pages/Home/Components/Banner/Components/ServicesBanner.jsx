@@ -17,8 +17,8 @@ function ServicesBanner() {
                     Deține un depozit cu un volum de 500.000 m3 pentru depozitarea materialelor de
                     construcții.
                 </div>
+                <div className='button'>Descoperă mai multe</div>
             </div>
-            <div className='banner__services--button'>Descoperă mai multe</div>
         </a>
     );
 }
