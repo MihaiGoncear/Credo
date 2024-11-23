@@ -1,0 +1,139 @@
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+:root 
+    --white-color: #fffdfb
+    --black-color: #000
+    --yellow-color: #ffb000
+    --asphalt-color: #233038
+    --ff-roboto: "Roboto", sans-serif
+
+body,
+html 
+    width: 100%
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    font-family: var(--ff-roboto)
+
+body.scroll-lock 
+    overflow: hidden
+
+input,
+textarea,
+button,
+select 
+    border: none
+    outline: none
+    background-color: transparent
+    cursor: pointer
+
+img 
+    width: 100%
+
+a 
+    text-decoration: none
+    color: var(--black-color)
+
+main 
+    overflow-x: hidden
+
+.general-wrapper 
+    max-width: 1320px
+    width: 100%
+    margin: 0 auto
+    padding: 0 15px
+
+.disable-selection 
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -webkit-tap-highlight-color: transparent
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    outline: none
+    -webkit-appearance: none
+    appearance: none
+
+.gradient-text 
+    background-clip: text !important
+    -webkit-background-clip: text !important
+    -webkit-text-fill-color: transparent !important
+
+.ui__display-align-bottom 
+    display: flex
+    align-items: flex-end
+
+.ui__display-align-center 
+    display: flex
+    align-items: center
+
+.ui__display-align-top 
+    display: flex
+    align-items: flex-start
+
+.ui__display-center 
+    display: flex
+    align-items: center
+    justify-content: center
+
+.ui__display-justify-between 
+    justify-content: space-between
+
+.ui__background-image-center 
+    background-position: 50%
+    background-repeat: no-repeat
+    background-size: cover
+
+.ui__cols 
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-flex: 0
+    -ms-flex: 0 1 auto
+    flex: 0 1 auto
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+.ui__rows 
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-flex: 0
+    -ms-flex: 0 1 auto
+    flex: 0 1 auto
+
+.ui__custom-arrow-select
+    display: flex
+    align-items: center
+    cursor: pointer
+
+.ui__custom-arrow-select::after 
+    content: ''
+    display: block
+    width: 7px
+    height: 7px
+    border-right: 2px solid var(--black-color)
+    border-top: 2px solid var(--black-color)
+    margin-left: 10px
+    margin-top: -3px
+    transform: rotate(135deg)
+
+.ui__custom-arrow-select.active::after 
+    transform: rotate(-45deg)
+    margin-top: 4px
+
+.ui__3-line-title 
+    display: -webkit-box
+    line-clamp: 3
+    -webkit-line-clamp: 3
+    -webkit-box-orient: vertical
+    overflow: hidden
+    text-overflow: ellipsis
+
+.hidden
+    display: none !important

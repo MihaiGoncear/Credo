@@ -1,0 +1,87 @@
+.header
+    width: 100%
+    background-color: var(--white-color)
+    box-shadow: 0 -4px 11px var(--asphalt-color)
+    position: relative
+    z-index: 2
+    &__logo
+        margin: 9px 0
+        width: 130px
+    &__languages
+        position: relative
+        margin-left: 20px
+        &--head
+            position: relative
+            z-index: 2
+            text-transform: capitalize
+            background-color: var(--white-color)
+            padding: 7px 10px
+            border-radius: 7px
+            border: 1px solid var(--asphalt-color)
+            min-width: 75px
+            &:hover,
+            &.active
+                color: var(--white-color)
+                background-color: var(--asphalt-color)
+                &::after
+                    border-right: 2px solid var(--white-color)
+                    border-top: 2px solid var(--white-color)
+        &--items
+            position: absolute
+            z-index: 1
+            top: calc(100% - 8px)
+            left: 0
+            right: 0
+            background-color: var(--white-color)
+            border: solid var(--asphalt-color)
+            border-width: 0 1px 1px 1px
+            border-radius: 0 0 6px 6px
+            padding-top: 5px
+            text-transform: capitalize
+        &--item        
+            padding: 8px 10px
+            border-bottom: 1px solid var(--asphalt-color)
+            cursor: pointer
+            &:last-child
+                border-bottom: none
+            &:hover,
+            &.active
+                color: var(--white-color)
+                background-color: var(--asphalt-color)
+    &__navigation
+        margin-left: auto
+        &--item
+            height: 80px
+            padding: 0 20px
+            &:hover,
+            &.active
+                color: var(--white-color)
+                background-color: var(--asphalt-color)
+            @media screen and (max-width: 720px)
+                width: 100%
+        &--mobile
+            width: 55px
+            height: 47px
+            cursor: pointer
+            padding: 10px 10px
+            border-radius: 10px
+            span
+                height: 4px
+                background-color: var(--asphalt-color)
+                width: 100%
+                display: block
+                border-radius: 10px
+            &:hover,
+            &.active
+                background-color: var(--asphalt-color)
+                span
+                    background-color: var(--white-color)
+        &--items
+            @media screen and (max-width: 720px)
+                    position: absolute
+                    flex-direction: column
+                    right: 0px
+                    width: 200px
+                    background-color: var(--white-color)
+                    top: 80px
+                    box-shadow: 0 7px 8px #23303830
