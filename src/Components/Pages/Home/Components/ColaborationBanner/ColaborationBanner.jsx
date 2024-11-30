@@ -14,7 +14,7 @@ function ColaborationBanner() {
                     </div>
                 </div>
                 <img
-                    src='./images/icons/collaboration.svg'
+                    src='./images/icons/general/collaboration.svg'
                     alt='collaboration'
                     className='image'
                 />

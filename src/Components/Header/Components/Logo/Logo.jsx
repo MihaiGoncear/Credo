@@ -5,7 +5,7 @@ function Logo() {
         <a href='/'>
             <img
                 className='header__logo'
-                src='./images/credo-logo.png'
+                src='./images/icons/general/credo-logo.png'
                 alt='logo'
             />
         </a>

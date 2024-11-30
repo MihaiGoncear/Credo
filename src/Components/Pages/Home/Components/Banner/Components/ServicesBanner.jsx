@@ -3,9 +3,9 @@ import React from "react";
 function ServicesBanner() {
     return (
         <a
-            href='/#/about'
+            href='/about'
             className='banner banner__services ui__background-image-center '
-            style={{ backgroundImage: "url(./images/services-banner.jpg)" }}
+            style={{ backgroundImage: "url(./images/banners/services-banner.jpg)" }}
         >
             <div className='banner__services--list general-wrapper'>
                 <div className='title ui__ff--noto'>Serviciile noastre</div>
