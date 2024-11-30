@@ -1,0 +1,53 @@
+.footer
+    background-color: var(--asphalt-color)
+    padding: 50px 0 20px 0
+    margin-top: 50px
+    color: var(--white-color)
+    a
+        color: var(--white-color)
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+    &__wrapper
+        flex-wrap: wrap
+        justify-content: space-between
+        @media screen and (max-width: 480px)
+            flex-direction: column
+            align-items: center
+
+    &__logo
+        max-width: 200px
+        @media screen and (max-width: 580px)
+            width: 150px
+            margin-bottom: 20px
+        img
+            filter: grayscale(1) brightness(0) invert(.975)
+    &__contacts
+        font-weight: 300
+        > .contacts-item + .contacts-item
+            margin-top: 20px
+        .contacts-item
+            .title
+                font-weight: 400
+                margin-right: 10px
+                @media screen and (max-width: 580px)
+                    display: none
+            img 
+                filter: invert(100%) sepia(10%) saturate(2164%) hue-rotate(336deg) brightness(100%) contrast(126%)
+                width: 20px
+                margin-right: 10px     
+    &__text
+        flex: 1 0 100%
+        text-align: center
+        margin-top: 40px
+        @media screen and (max-width: 900px)
+            margin-top: 20px
+    &__developer
+        align-items: center
+        font-weight: 300
+        @media screen and (max-width: 900px)
+            flex: 1 0 100%
+            text-align: center
+            margin-top: 20px
+        a
+            font-weight: 400

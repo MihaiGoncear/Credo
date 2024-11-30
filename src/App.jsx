@@ -3,6 +3,7 @@ import "./assets/styles.sass";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Header from "Components/Header/Header";
 import Home from "Components/Pages/Home/Home";
+import Footer from "Components/Footer/Footer";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                     element={<Home />}
                 />
             </Routes>
+            <Footer />
         </BrowserRouter>
     );
 }
