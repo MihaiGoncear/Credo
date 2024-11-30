@@ -1,7 +1,6 @@
 import React from "react";
 import { NEWS } from "utils/constants";
 import NewsItem from "./Components/NewsItem";
-import "./News.sass";
 import { Link } from "react-router-dom";
 
 function News() {

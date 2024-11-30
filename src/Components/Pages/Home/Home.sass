@@ -223,3 +223,101 @@
                     &--title
                         animation: appearContacts 4s forwards
                         opacity: 0
+    &__news
+        margin-top: 20px
+        &--title
+            font-size: 35px
+            font-weight: 500
+            margin-bottom: 20px
+            width: 100%
+            @media screen and (max-width: 460px)
+                font-size: 25px
+            a
+                color: var(--asphalt-color)
+                text-decoration: none
+                font-size: 16px
+                &:hover
+                    text-decoration: underline
+                @media screen and (max-width: 460px)
+                    font-size: 14px
+                
+        &--items
+            flex-wrap: wrap
+            > * + *
+                margin-left: 10px
+                @media screen and (max-width: 830px)
+                    margin-left: 0
+        &--item
+            flex: 0 0 calc(33.3333% - 10px)
+            background-color: var(--white-color)
+            border-radius: 5px
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+            overflow: hidden
+            padding-bottom: 30px
+            @media screen and (max-width: 830px)
+                flex: 1 0 100%
+                max-width: 450px
+                margin: 0 auto 20px auto
+                    
+            .image
+                width: 450px
+                height: 300px
+            .title
+                font-size: 20px
+                font-weight: 500
+                margin: 10px 20px
+            .date
+                font-size: 14px
+                color: var(--asphalt-color)
+                margin: 10px 20px
+            &:hover
+                .title
+                    text-decoration: underline
+    &__statistics
+        margin: 80px auto 70px auto
+        max-width: 1100px
+        width: 100%
+        align-items: flex-start
+        @media screen and (max-width: 450px)
+            margin: 40px auto 30px auto
+            flex-wrap: wrap
+        &--item
+            border-radius: 10px
+            flex: 0 0 calc(25% - 20px)
+            max-width: 270px
+            @media screen and (max-width: 830px)
+                max-width: unset
+            @media screen and (max-width: 450px)
+                flex: 0 0 calc(50% - 5px)
+                margin-bottom: 20px
+            .image
+                filter: invert(16%) sepia(35%) saturate(403%) hue-rotate(159deg) brightness(92%) contrast(93%)
+                width: 120px
+                height: 120px
+                opacity: .6
+                @media screen and (max-width: 830px)
+                    width: 80px
+                    height: 80px
+                // @media screen and (max-width: 450px)
+                //     width: 60px
+                //     height: 60px
+            .title
+                font-size: 25px
+                text-align: center
+                color: var(--asphalt-color)
+                white-space: nowrap
+                @media screen and (max-width: 830px)
+                    font-size: 20px
+                    white-space: unset
+                // @media screen and (max-width: 450px)
+                //     font-size: 16px
+            .number
+                font-size: 44px
+                font-weight: 700
+                color: var(--yellow-color)
+                margin: 30px 0
+                @media screen and (max-width: 830px)
+                    font-size: 30px
+                    margin: 20px 0
+                // @media screen and (max-width: 450px)
+                //     font-size: 25px

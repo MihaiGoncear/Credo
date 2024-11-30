@@ -33,3 +33,26 @@ export const NEWS = [
         date: "23 Noiembrie 2024",
     },
 ];
+
+export const MERITS = [
+    {
+        title: "Proiecte finisate",
+        number: "+150",
+        image: "./images/icons/projects.svg",
+    },
+    {
+        title: "Ani de experiență",
+        number: "+20",
+        image: "./images/icons/years.svg",
+    },
+    {
+        title: "Utilaje",
+        number: "+120",
+        image: "./images/icons/machines.svg",
+    },
+    {
+        title: "Specialiști",
+        number: "+100",
+        image: "./images/icons/clients.svg",
+    },
+];
