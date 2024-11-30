@@ -10,13 +10,16 @@
     --asphalt-color: #233038
     --ff-roboto: "Roboto", sans-serif
     --ff-noto: "Noto Serif", serif
+#root
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 100vh
 
 body,
 html 
     width: 100%
     min-height: 100vh
-    display: flex
-    flex-direction: column
     font-family: var(--ff-roboto)
 
 body.scroll-lock 
