@@ -37,7 +37,7 @@ export const NEWS = [
 export const MERITS = [
     {
         title: "Proiecte finisate",
-        number: "+150",
+        number: "+500",
         image: "./images/icons/projects.svg",
     },
     {
@@ -47,12 +47,12 @@ export const MERITS = [
     },
     {
         title: "Utilaje",
-        number: "+120",
+        number: "+200",
         image: "./images/icons/machines.svg",
     },
     {
         title: "Specialiști",
-        number: "+100",
+        number: "+300",
         image: "./images/icons/clients.svg",
     },
 ];
