@@ -56,3 +56,38 @@ export const MERITS = [
         image: "./images/icons/clients.svg",
     },
 ];
+
+export const PARTNERS = [
+    {
+        title: "Summa",
+        image: "./images/icons/summa.svg",
+    },
+    {
+        title: "Coca-Cola",
+        image: "./images/icons/cocacola.png",
+    },
+    {
+        title: "Administratia de Stat a Drumurilor",
+        image: "./images/icons/adsd.png",
+    },
+    {
+        title: "Consiliul Municipal Chișinău",
+        image: "./images/icons/consiliu-munic.png",
+    },
+    {
+        title: "Premier Energy",
+        image: "./images/icons/premier-energy.png",
+    },
+    {
+        title: "USAID",
+        image: "./images/icons/usaid.png",
+    },
+    {
+        title: "Milenium",
+        image: "./images/icons/milenium.png",
+    },
+    {
+        title: "IFAD",
+        image: "./images/icons/ifad.png",
+    },
+];
