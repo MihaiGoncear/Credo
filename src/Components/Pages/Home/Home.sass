@@ -314,6 +314,49 @@
                 @media screen and (max-width: 830px)
                     font-size: 30px
                     margin: 20px 0
+    &__colaboration
+        background-color: var(--asphalt-color)
+        padding: 40px 0
+        display: block
+        color: var(--white-color)
+        justify-content: space-between
+        margin: 30px 0
+        @media screen and (max-width: 460px)
+            padding: 70px 0
+        &:hover
+            text-decoration: underline
+            .home__colaboration--subtitle
+                text-decoration: underline
+        .image
+            width: 200px
+            height: 200px
+            filter: invert(100%) sepia(43%) saturate(378%) hue-rotate(335deg) brightness(104%) contrast(107%)
+            margin-right: 160px
+            margin-left: 10px
+            @media screen and (max-width: 1300px)
+                margin-right: 0
+            @media screen and (max-width: 640px)
+                width: 150px
+                height: 150px
+            @media screen and (max-width: 460px)
+                width: 100px
+                height: 100px
+                margin-top: -35px
+        &--title
+            font-size: 40px
+            margin-bottom: 40px
+            @media screen and (max-width: 780px)
+                font-size: 30px
+            @media screen and (max-width: 460px)
+                margin-bottom: 20px
+                font-size: 20px
+        &--subtitle
+            color: var(--yellow-color)
+            @media screen and (max-width: 460px)
+                font-size: 14px
+                position: absolute
+            span
+                text-decoration: underline
     &__partners
         &--title
             font-size: 35px
