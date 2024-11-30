@@ -12,7 +12,6 @@ function Navigation() {
     const { isMobile } = useWindowSizes();
     const menuRef = useRef(null);
     useClickOutsideTarget(menuRef, setIsMenuActive);
-    console.log(isMenuActive);
 
     return (
         <div
