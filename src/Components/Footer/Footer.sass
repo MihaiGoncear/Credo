@@ -23,10 +23,13 @@
         img
             filter: grayscale(1) brightness(0) invert(.975)
     &__contacts
+        flex-wrap: wrap
         font-weight: 300
+        flex: 0 0 calc(100% - 350px)
         > .contacts-item + .contacts-item
             margin-top: 20px
         .contacts-item
+            flex: 1 0 50%
             .title
                 font-weight: 400
                 margin-right: 10px

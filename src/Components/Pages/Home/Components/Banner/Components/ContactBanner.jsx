@@ -5,7 +5,7 @@ function ContactBanner() {
         <a
             href='/contacts'
             className='banner banner__contacts ui__background-image-center '
-            style={{ backgroundImage: "url(./images/banners/contacts-banner.jpg)" }}
+            style={{ backgroundImage: "url(/images/banners/contacts-banner.jpg)" }}
         >
             <div className='banner__contacts--title'>
                 Ai nevoie de experți în infrastructură rutieră? <br /> Suntem la un click distanță!

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function News() {
     return (
         <div className='home__news'>
-            <div className='home__news--title ui__ff--noto  ui__display-justify-between ui__display-align-center'>
+            <div className='home__news--title ui__title ui__display-justify-between ui__display-align-center'>
                 Ultimile Noutăți
                 <Link to={"/news"}>Vezi pe toate →</Link>
             </div>

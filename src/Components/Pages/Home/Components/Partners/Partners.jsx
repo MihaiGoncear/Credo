@@ -10,7 +10,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import useWindowSizes from "hooks/useWindowSizes";
 
 function Partners() {
-    const [slidesPerView, setSlidesPerView] = useState(3);
+    const [slidesPerView, setSlidesPerView] = useState(5);
     const { windowWidth } = useWindowSizes();
 
     useEffect(() => {
@@ -18,14 +18,16 @@ function Partners() {
             setSlidesPerView(1);
         } else if (windowWidth < 500) {
             setSlidesPerView(2);
-        } else {
+        } else if (windowWidth < 1000) {
             setSlidesPerView(3);
+        } else {
+            setSlidesPerView(5);
         }
     }, [windowWidth]);
 
     return (
         <div className='home__partners'>
-            <div className='home__partners--title ui__ff--noto'>Parteneri</div>
+            <div className='home__partners--title ui__title'>Parteneri</div>
             <Swiper
                 className='home__partners--slider'
                 wrapperClass='home__partners--wrapper ui__display-align-center'
