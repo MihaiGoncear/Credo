@@ -6,7 +6,7 @@ import Contact from "Components/Footer/Components/Contact";
 function Contacts() {
     return (
         <div className='contacts'>
-            <div className='general-wrapper'>
+            <div className='general-wrapper ui__rows'>
                 <div className='ui__title'>Contacte</div>
                 <div className='contacts__wrapper'>
                     <div className='contacts__contacts'>
@@ -55,7 +55,12 @@ function Contacts() {
                         </div>
                     </div>
                 </div>
-                <div className='contacts__map'></div>
+                <div className='contacts__map'>
+                    <iframe
+                        title='map'
+                        src="https://www.google.com/maps/embed/v1/place?q=47%C2%B000'03.%2028%C2%B053'01.&amp;key=AIzaSyAeKdt5GLEA2vn9of32sYftX8tQ2tiNIIA"
+                    ></iframe>
+                </div>
             </div>
         </div>
     );

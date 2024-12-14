@@ -1,5 +1,17 @@
 .contacts
     margin-top: 40px
+    .general-wrapper
+        flex-wrap: wrap
+        @media screen and (max-width: 1100px)
+            flex-direction: column
+    .ui__title
+        @media screen and (max-width: 1100px)
+            order: 1
+    &__wrapper
+        max-width: 600px
+        width: 100%
+        @media screen and (max-width: 1100px)
+            order: 3
     &__contacts
         > .contacts-item + .contacts-item
             margin-top: 20px
@@ -63,5 +75,15 @@
                 &:hover
                     background-color: var(--asphalt-color)
                     color: var(--yellow-color)
-       
-   
+    &__map
+        margin-left: 40px
+        width: calc(100% - 640px)
+        @media screen and (max-width: 1100px)
+            order: 2
+            margin-left: 0
+            margin: 20px 0
+            width: 100%
+        iframe
+            width: 100%
+            height: 400px
+            border-radius: 10px

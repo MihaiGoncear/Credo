@@ -3,6 +3,8 @@
     padding: 50px 0 20px 0
     margin-top: 50px
     color: var(--white-color)
+    @media screen and (max-width: 580px)
+        padding-top: 30px
     a
         color: var(--white-color)
         text-decoration: none
@@ -26,10 +28,16 @@
         flex-wrap: wrap
         font-weight: 300
         flex: 0 0 calc(100% - 350px)
+        @media screen and (max-width:1200px)
+            flex: 1 0 calc(100% - 220px)
+            margin-left: 20px
+
         > .contacts-item + .contacts-item
             margin-top: 20px
         .contacts-item
             flex: 1 0 50%
+            @media screen and (max-width:1200px)
+                flex: 1 0 100%  
             .title
                 font-weight: 400
                 margin-right: 10px
