@@ -1,6 +1,7 @@
 import React from "react";
+import { TRANSLATES } from "utils/translates";
 
-function Contact({ info }) {
+function Contact({ info, currLanguage }) {
     const { title, image, content, type } = info;
     let hrefType = "";
     if (type === "phone") {
@@ -18,7 +19,7 @@ function Contact({ info }) {
                 src={image}
                 alt={title}
             />
-            <div className='title'>{title}: </div>
+            <div className='title'>{TRANSLATES[title][currLanguage]}: </div>
             <a href={`${hrefType}${type === "address" ? "" : content.replaceAll(" ", "")}`}>
                 {content}
             </a>

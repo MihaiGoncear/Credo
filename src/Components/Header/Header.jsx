@@ -4,13 +4,17 @@ import Languages from "./Components/Languages/Languages";
 import Navigation from "./Components/Navigation/Navigation";
 import "./Header.sass";
 
-function Header() {
+function Header({ isAdmin }) {
     return (
         <div className='header'>
             <div className='general-wrapper ui__display-align-center'>
                 <Logo />
-                <Languages />
-                <Navigation />
+                {!isAdmin && (
+                    <>
+                        <Languages />
+                        <Navigation />
+                    </>
+                )}
             </div>
         </div>
     );

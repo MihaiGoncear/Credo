@@ -1,25 +1,25 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { TRANSLATES } from "utils/translates";
 
 function ServicesBanner() {
+    // @ts-ignore
+    const currLanguage = useSelector((state) => state.language.language);
     return (
-        <a
-            href='/about'
+        <Link
+            to={"/about"}
             className='banner banner__services ui__background-image-center '
             style={{ backgroundImage: "url(/images/banners/services-banner.jpg)" }}
         >
             <div className='banner__services--list general-wrapper'>
-                <div className='title ui__ff--noto'>Serviciile noastre</div>
-                <div className='item'>
-                    Dispune de uzina de asfalt „BENINGHOVEN” cu o capacitate de 200 tone/H
-                </div>
-                <div className='item'>Asfaltarea și reparația drumurilor</div>
-                <div className='item'>
-                    Deține un depozit cu un volum de 500.000 m3 pentru depozitarea materialelor de
-                    construcții.
-                </div>
-                <div className='button'>Descoperă mai multe</div>
+                <div className='title ui__ff--noto'>{TRANSLATES.ourServices[currLanguage]}</div>
+                <div className='item'>{TRANSLATES.asphaltFactory[currLanguage]}</div>
+                <div className='item'>{TRANSLATES.asphaltReparation[currLanguage]}</div>
+                <div className='item'>{TRANSLATES.depositCapacity[currLanguage]}</div>
+                <div className='button'>{TRANSLATES.descoverMore[currLanguage]}</div>
             </div>
-        </a>
+        </Link>
     );
 }
 

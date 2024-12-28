@@ -2,9 +2,14 @@ import React from "react";
 import "./Footer.sass";
 import Contact from "./Components/Contact";
 import { CONTACTS } from "utils/constants";
+import { useSelector } from "react-redux";
+import { TRANSLATES } from "utils/translates";
 
 function Footer() {
     const year = new Date().getFullYear();
+    // @ts-ignore
+    const currLanguage = useSelector((state) => state.language.language);
+
     return (
         <footer className='footer ui__display-align-center'>
             <div className='general-wrapper ui__rows footer__wrapper'>
@@ -22,11 +27,12 @@ function Footer() {
                         <Contact
                             info={contact}
                             key={index}
+                            currLanguage={currLanguage}
                         />
                     ))}
                 </div>
                 <p className='footer__text'>
-                    © Toate drepturile rezervate S.R.L. Credo Industry 2004 - {year}
+                    © {TRANSLATES.rights[currLanguage]} S.R.L. Credo Industry 2004 - {year}
                 </p>
             </div>
         </footer>

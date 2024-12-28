@@ -1,8 +1,8 @@
 export const HEADER_NAV_LINKS = [
-    { name: "Acasă", path: "/" },
-    { name: "Despre Noi", path: "/about" },
-    { name: "Evenimente", path: "/news" },
-    { name: "Contacte", path: "/contacts" },
+    { name: "home", path: "/" },
+    { name: "aboutUs", path: "/about" },
+    { name: "events", path: "/news" },
+    { name: "contacts", path: "/contacts" },
 ];
 
 export const LANGUAGES = ["rom", "rus", "eng", "arb"];
@@ -36,22 +36,22 @@ export const NEWS = [
 
 export const MERITS = [
     {
-        title: "Proiecte finisate",
+        title: "finishedProjects",
         number: "+500",
         image: "/images/icons/statistics/projects.svg",
     },
     {
-        title: "Ani de experiență",
+        title: "yearsOfExperience",
         number: "+20",
         image: "/images/icons/statistics/years.svg",
     },
     {
-        title: "Utilaje",
+        title: "machinery",
         number: "+200",
         image: "/images/icons/statistics/machines.svg",
     },
     {
-        title: "Specialiști",
+        title: "experts",
         number: "+300",
         image: "/images/icons/statistics/clients.svg",
     },
@@ -94,25 +94,25 @@ export const PARTNERS = [
 
 export const CONTACTS = [
     {
-        title: "Adresa",
+        title: "address",
         content: "str. Varnita 2/10, Chișinău, Moldova",
         image: "/images/icons/contacts/address_icon.svg",
         type: "address",
     },
     {
-        title: "Relații cu clienții",
+        title: "clientsRelation",
         content: "+373 22 123 456",
         image: "/images/icons/contacts/phone_icon.svg",
         type: "phone",
     },
     {
-        title: "Telefon contabilitate",
+        title: "contabilityPhone",
         content: "+373 22 123 457",
         image: "/images/icons/contacts/phone_icon.svg",
         type: "phone",
     },
     {
-        title: "Email",
+        title: "email",
         content: "credo@gmail.com",
         image: "/images/icons/contacts/email_icon.svg",
         type: "email",

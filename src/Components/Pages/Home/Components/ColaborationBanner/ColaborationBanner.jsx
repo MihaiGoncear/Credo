@@ -1,16 +1,24 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { TRANSLATES } from "utils/translates";
 
 function ColaborationBanner() {
+    // @ts-ignore
+    const currLanguage = useSelector((state) => state.language.language);
     return (
-        <a
-            href='/contacts'
+        <Link
+            to={"/contacts"}
             className='home__colaboration'
         >
             <div className='general-wrapper ui__display-align-center ui__display-justify-between'>
                 <div className='text ui__ff--noto'>
-                    <div className='home__colaboration--title'>Ce zici să lucrăm împreună?</div>
+                    <div className='home__colaboration--title'>
+                        {TRANSLATES.letsWorkTogether[currLanguage]}
+                    </div>
                     <div className='home__colaboration--subtitle'>
-                        <span>Contactează-ne</span> pentru a discuta despre ideia ta.
+                        <span>{TRANSLATES.contactUs[currLanguage]}</span>{" "}
+                        {TRANSLATES.discussIdea[currLanguage]}
                     </div>
                 </div>
                 <img
@@ -19,7 +27,7 @@ function ColaborationBanner() {
                     className='image'
                 />
             </div>
-        </a>
+        </Link>
     );
 }
 

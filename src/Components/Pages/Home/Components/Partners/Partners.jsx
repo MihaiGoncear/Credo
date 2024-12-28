@@ -8,6 +8,8 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import useWindowSizes from "hooks/useWindowSizes";
+import { useSelector } from "react-redux";
+import { TRANSLATES } from "utils/translates";
 
 function Partners() {
     const [slidesPerView, setSlidesPerView] = useState(5);
@@ -25,9 +27,14 @@ function Partners() {
         }
     }, [windowWidth]);
 
+    // @ts-ignore
+    const currLanguage = useSelector((state) => state.language.language);
+
     return (
         <div className='home__partners'>
-            <div className='home__partners--title ui__title'>Parteneri</div>
+            <div className='home__partners--title ui__title'>
+                {TRANSLATES["partners"][currLanguage]}
+            </div>
             <Swiper
                 className='home__partners--slider'
                 wrapperClass='home__partners--wrapper ui__display-align-center'
@@ -43,11 +50,8 @@ function Partners() {
             >
                 {PARTNERS.map((partner, index) => {
                     return (
-                        <SwiperSlide>
-                            <Partner
-                                key={index}
-                                info={partner}
-                            />
+                        <SwiperSlide key={index}>
+                            <Partner info={partner} />
                         </SwiperSlide>
                     );
                 })}

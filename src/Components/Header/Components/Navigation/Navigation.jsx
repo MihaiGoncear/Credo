@@ -4,6 +4,8 @@ import NavLink from "./Components/NavLink";
 import useWindowSizes from "hooks/useWindowSizes";
 import useClickOutsideTarget from "hooks/useClickOutsideTarget";
 import { HEADER_NAV_LINKS } from "utils/constants";
+import { useSelector } from "react-redux";
+import { TRANSLATES } from "utils/translates";
 
 function Navigation() {
     const [isMenuActive, setIsMenuActive] = useState(false);
@@ -11,6 +13,10 @@ function Navigation() {
     const activeTab = `${location.pathname}${location.hash}`;
     const { isMobile } = useWindowSizes();
     const menuRef = useRef(null);
+
+    // @ts-ignore
+    const currLanguage = useSelector((state) => state.language.language);
+
     useClickOutsideTarget(menuRef, setIsMenuActive);
 
     return (
@@ -41,7 +47,7 @@ function Navigation() {
                         <NavLink
                             isActive={activeTab === itm.path}
                             key={itm.name}
-                            name={itm.name}
+                            name={TRANSLATES[itm.name][currLanguage]}
                             path={itm.path}
                         />
                     );
