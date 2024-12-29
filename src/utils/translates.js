@@ -125,6 +125,12 @@ export const TRANSLATES = {
         eng: "Email",
         arb: "البريد الإلكتروني",
     },
+    phone: {
+        rom: "Telefon",
+        rus: "Телефон",
+        eng: "Phone",
+        arb: "هاتف",
+    },
     rights: {
         rom: "Toate drepturile rezervate",
         rus: "Все права защищены",
@@ -160,5 +166,29 @@ export const TRANSLATES = {
         rus: "чтобы обсудить вашу идею",
         eng: "to discuss your idea",
         arb: "لمناقشة فكرتك",
+    },
+    nameSurname: {
+        rom: "Nume și prenume",
+        rus: "Имя и фамилия",
+        eng: "Name and surname",
+        arb: "الاسم واللقب",
+    },
+    message: {
+        rom: "Mesaj",
+        rus: "Сообщение",
+        eng: "Message",
+        arb: "رسالة",
+    },
+    send: {
+        rom: "Trimite",
+        rus: "Отправить",
+        eng: "Send",
+        arb: "إرسال",
+    },
+    leaveMessage: {
+        rom: "Lăsați-ne un mesaj",
+        rus: "Оставьте нам сообщение",
+        eng: "Leave us a message",
+        arb: "اترك لنا رسالة",
     },
 };

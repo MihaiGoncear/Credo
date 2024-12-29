@@ -15,6 +15,7 @@ function Languages() {
 
     const changeLanguage = (item) => {
         dispatch(setLanguage(item));
+        localStorage.setItem("language", item);
     };
 
     const langRef = useRef(null);

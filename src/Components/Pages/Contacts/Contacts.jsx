@@ -1,9 +1,14 @@
 import React from "react";
 import "./Contacts.sass";
 import { CONTACTS } from "utils/constants";
-import Contact from "Components/Footer/Components/Contact";
+import Contact from "./Components/Contact/Contact";
+import { useSelector } from "react-redux";
+import { TRANSLATES } from "utils/translates";
 
 function Contacts() {
+    // @ts-ignore
+    const currLanguage = useSelector((state) => state.language.language);
+
     return (
         <div className='contacts'>
             <div className='general-wrapper ui__rows'>
@@ -14,40 +19,41 @@ function Contacts() {
                             <Contact
                                 info={contact}
                                 key={index}
+                                currLanguage={currLanguage}
                             />
                         ))}
                     </div>
                     <div className='contacts__reclamation'>
-                        <div className='title'>Lăsați-ne un mesaj:</div>
+                        <div className='title'>{TRANSLATES.leaveMessage[currLanguage]}:</div>
                         <div className='input-wrapper'>
-                            <label htmlFor='name'>Numele și prenumele:</label>
+                            <label htmlFor='name'>{TRANSLATES.nameSurname[currLanguage]}:</label>
                             <input
                                 type='text'
                                 name='name'
-                                placeholder='Scrieți numele și prenumele...'
+                                placeholder='John Doe'
                             />
                         </div>
                         <div className='input-wrapper'>
-                            <label htmlFor='email'>Email:</label>
+                            <label htmlFor='email'>{TRANSLATES.email[currLanguage]}:</label>
                             <input
                                 type='email'
                                 name='email'
-                                placeholder='Scrieți email-ul...'
+                                placeholder='example@gmail.com'
                             />
                         </div>
                         <div className='input-wrapper'>
-                            <label htmlFor='phone'>Telefon:</label>
+                            <label htmlFor='phone'>{TRANSLATES.phone[currLanguage]}:</label>
                             <input
                                 type='tel'
                                 name='phone'
-                                placeholder='Scrieți telefonul...'
+                                placeholder='+37360000000'
                             />
                         </div>
                         <div className='input-wrapper'>
-                            <label htmlFor='message'>Mesaj:</label>
+                            <label htmlFor='message'>{TRANSLATES.message[currLanguage]}:</label>
                             <textarea
                                 name='message'
-                                placeholder='Scrieți mesajul...'
+                                placeholder={`${TRANSLATES.message[currLanguage]}...`}
                             ></textarea>
                         </div>
                         <div className='input-wrapper'>
