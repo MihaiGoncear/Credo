@@ -5,6 +5,7 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 
 function Admin() {
     const [activeTab, setActiveTab] = useState(0);
+
     return (
         <div className='admin'>
             <div className='admin-header ui__display-align-center'>
