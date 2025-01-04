@@ -2,10 +2,15 @@ import React, { useEffect, useState } from "react";
 import Languages from "../Languages/Languages";
 import { getBlock, updateBlock } from "api/api";
 import { LANGUAGES } from "utils/constants";
+import CustomWysiwyg from "../CustomWysiwyg/CustomWysiwyg";
+import { useSelector } from "react-redux";
 
 function AboutUs() {
     const [language, setLanguage] = useState(LANGUAGES[0]);
     const [contentToSend, setContentToSend] = useState({});
+
+    //@ts-ignore
+    const token = useSelector((state) => state.token);
 
     useEffect(() => {
         const getAddressesApi = async () => {
@@ -17,15 +22,26 @@ function AboutUs() {
         getAddressesApi();
     }, []);
 
-    const handleChange = (e) => {
-        setContentToSend({
-            ...contentToSend,
-            [`value_${language}`]: e.target.value,
-        });
+    const handleUpdateBlock = async () => {
+        try {
+            const res = await updateBlock({ ...contentToSend, token: token });
+            console.log(res);
+
+            if (!res.data.error) {
+                alert("Informația a fost actualizată cu succes!");
+            } else {
+                alert(res.data.error);
+            }
+        } catch (error) {
+            console.log(error);
+        }
     };
 
-    const handleUpdateBlock = async () => {
-        await updateBlock(contentToSend);
+    const handleWysiwygChange = (updatedContent) => {
+        setContentToSend({
+            ...contentToSend,
+            [`value_${language}`]: updatedContent,
+        });
     };
 
     return (
@@ -35,9 +51,9 @@ function AboutUs() {
                 setLanguage={setLanguage}
             />
             <div className='admin-content__about-us'>
-                <textarea
-                    onChange={(e) => handleChange(e)}
-                    value={contentToSend[`value_${language}`]}
+                <CustomWysiwyg
+                    content={contentToSend[`value_${language}`] || ""}
+                    onChange={handleWysiwygChange}
                 />
                 <div
                     className='send-button'

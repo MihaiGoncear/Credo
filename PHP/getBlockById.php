@@ -1,11 +1,11 @@
 <?php
 require_once("./core.php");
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    $name = "about_us";
+    $name = $_GET['name'];
     $sql = Database::prepare_bind(
         "SELECT * FROM `blocks` WHERE `name` = ?",
         "i",
-        ["about_us"]
+        [$name]
     );
     $result = Database::execute_get_result($sql);
     if ($result) {
@@ -15,7 +15,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         returnJSON(["error" => "Error Occurred"]);
     }
 } else if($_SERVER['REQUEST_METHOD'] == "POST") {
+
     $data = decodeJSON(file_get_contents('php://input'));
+    $token = $data['token'];
+
+    if (!getUserIdByToken($token)) {
+        returnJSON(["error" => "Invalid Token"]);
+    }
+
     $name = $data['name'];
     $value_rom = $data['value_rom'];
     $value_eng = $data['value_eng'];

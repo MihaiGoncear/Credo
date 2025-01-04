@@ -8,6 +8,8 @@ import Contacts from "Components/Pages/Contacts/Contacts";
 import Admin from "Components/Pages/Admin/Admin";
 import { useDispatch } from "react-redux";
 import { setLanguage } from "./redux/slices/languageSlice";
+import AboutUs from "Components/Pages/AboutUs/AboutUs";
+import { setToken } from "./redux/slices/tokenSlice";
 
 function App() {
     const location = useLocation();
@@ -17,6 +19,12 @@ function App() {
     useEffect(() => {
         if (localStorage.getItem("language")) {
             dispatch(setLanguage(localStorage.getItem("language") || "rom"));
+        }
+    }, [dispatch]);
+
+    useEffect(() => {
+        if (localStorage.getItem("token")) {
+            dispatch(setToken(localStorage.getItem("token")));
         }
     }, [dispatch]);
 
@@ -35,6 +43,10 @@ function App() {
                 <Route
                     path='/admin'
                     element={<Admin />}
+                />
+                <Route
+                    path='/about'
+                    element={<AboutUs />}
                 />
             </Routes>
             {!isAdminPage && <Footer />}

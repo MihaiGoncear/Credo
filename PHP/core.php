@@ -12,3 +12,4 @@ const DB_DATABASE = 'credo';
 require_once('./classes/Database.php');
 require_once('./utils/returnJSON.php');
 require_once('./utils/decodeJSON.php');
+require_once('./utils/getUserIdByToken.php');
