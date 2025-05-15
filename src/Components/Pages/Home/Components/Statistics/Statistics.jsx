@@ -7,7 +7,10 @@ function Statistics() {
     // @ts-ignore
     const currLanguage = useSelector((state) => state.language.language);
     return (
-        <div className='home__statistics ui__rows ui__display-justify-between'>
+        <div
+            id='js__products'
+            className='home__statistics ui__rows ui__display-justify-between'
+        >
             {MERITS.map((item, index) => (
                 <Statistic
                     key={index}

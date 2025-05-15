@@ -1,6 +1,7 @@
 export const HEADER_NAV_LINKS = [
     { name: "home", path: "/" },
     { name: "aboutUs", path: "/about" },
+    { name: "products", path: "/products" },
     { name: "events", path: "/news" },
     { name: "contacts", path: "/contacts" },
 ];
@@ -9,28 +10,28 @@ export const LANGUAGES = ["rom", "rus", "eng", "arb"];
 
 export const NEWS = [
     {
-        title: "Construcția drumurilor în Moldova: Progrese și Provocări",
+        title: "DOTS Spearmint – Claritate și Energie ascuțită.",
         content:
-            "Compania noastră a finalizat recent construcția unui nou tronson de drum în nordul Moldovei, îmbunătățind considerabil infrastructura locală.",
-        image: "https://picsum.photos/id/134/900/600",
-        alias: "constructia-drumurilor-in-moldova-progrese-si-provocari",
-        date: "12 Noiembrie 2024",
+            "Un impuls rece care limpezește gândurile și aduce ordine în ritmul agitat al zilei. DOTS Spearmint activează o concentrare durabilă, fără excese și fără compromis. O alegere discretă, dar sigură pentru cei care știu ce au de făcut.",
+        image: "/images/icons/products/4.png",
+        alias: "proiecte-viitoare-de-infrastructura-rutiera",
+        date: "23 Noiembrie 2024",
     },
     {
-        title: "Tehnologii Moderne în Construcția Drumurilor",
+        title: "DOTS Coffee – Gust intens. Energie curată.",
         content:
-            "Utilizăm cele mai noi tehnologii și materiale pentru a asigura durabilitatea și calitatea drumurilor construite de compania noastră.",
-        image: "https://picsum.photos/id/155/900/600",
+            "Eleganța amară a cafelei într-un format modern, fără ceașcă. DOTS Coffee este pentru cei care nu au timp de pauze, dar știu să le savureze. Energie rafinată, focus clar și o aromă care domină. Oriunde. Oricând.",
+        image: "/images/icons/products/5.png",
         alias: "tehnologii-moderne-in-constructia-drumurilor",
         date: "16 Noiembrie 2024",
     },
     {
-        title: "Proiecte Viitoare de Infrastructură Rutieră",
+        title: "DOTS Strawberry – Plăcerea care prinde viață.",
         content:
-            "Planificăm să demarăm noi proiecte de construcție a drumurilor în mai multe regiuni ale țării, contribuind la dezvoltarea economică și socială.",
-        image: "https://picsum.photos/id/220/900/600",
-        alias: "proiecte-viitoare-de-infrastructura-rutiera",
-        date: "23 Noiembrie 2024",
+            "DOTS Strawberry nu doar energizează – seduce. Gustul intens de căpșună - exploziv, senzual și memorabil. Perfect pentru zile în care ai nevoie de un impuls care iese din tipare. Te aprinde... subtil.",
+        image: "/images/icons/products/6.png",
+        alias: "constructia-drumurilor-in-moldova-progrese-si-provocari",
+        date: "12 Noiembrie 2024",
     },
 ];
 

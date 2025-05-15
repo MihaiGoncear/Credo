@@ -1,16 +1,11 @@
 .home
     &__banner
-        height: 670px
+        height: 770px
         @media screen and (max-width: 760px)
             height: 450px
 
         &--wrapper
-            overflow: hidden
-            .swiper-slide
-                max-width: 100%
-                opacity: 0 !important
-            .swiper-slide-active 
-                opacity: 1 !important
+            height: 100%
             .banner
                 height: 100%
                 &__motto
@@ -74,15 +69,27 @@
                     height: 100%
                     width: 100%
                     display: block
+                    .title
+                        font-size: 35px
+                        font-weight: 600
+                        color: #433030
+                        padding: 20px 20px 20px 20px
+                        text-align: center
+                        background-color: #fff5e5
+                        width: fit-content
+                        margin: 0px auto 0 auto
+                        border-radius: 0 0 10px 10px
                     &--list
-                        background-color: #7b7b7bb3
-                        padding: 40px 20px 40px 40px
-                        border-radius: 15px
-                        width: 930px
+                        background-color: rgb(255 245 229)
+                        padding: 20px 20px 20px 40px
+                        border-radius: 10px 10px 0 0
+                        width: 560px
+                        height: auto
                         position: absolute
                         left: 50%
-                        top: 50%
-                        transform: translate(-50%, -50%)
+                        bottom: 69px
+                        transform: translate(-50%, 0%)
+                        overflow: hidden
                         @media screen and (max-width: 1000px)
                             width: 550px
                             max-width: calc(100% - 20px)
@@ -91,31 +98,15 @@
                             top: 40%
                             padding: 35px 10px 25px 10px
                             border-radius: 9px
-                        .title
-                            font-size: 50px
-                            font-weight: 600
-                            color: var(--white-color)
-                            margin-bottom: 30px
-                            margin-top: -20px
-                            @media screen and (max-width: 1000px)
-                                font-size: 35px
-                            @media screen and (max-width: 760px)
-                                margin-top: -30px
-                                margin-bottom: 15px
-                            
                         .item
-                            font-size: 30px
+                            font-size: 40px
                             position: relative
                             font-weight: 500
-                            color: var(--yellow-color)
+                            color: var(--black-color)
                             letter-spacing: 2px
-                            @media screen and (max-width: 1000px)
-                                font-size: 19px
-                            @media screen and (max-width: 760px)
-                                font-size: 17px
-                            &::before
-                                content: "➤"
-                                margin-right: 20px
+                            text-align: center
+                            text-transform: capitalize
+                            
                         .item + .item
                             margin-top: 50px
                             @media screen and (max-width: 1000px)
@@ -142,87 +133,87 @@
                             @media screen and (max-width: 760px)
                                 font-size: 17px
                                 bottom: -70px
-                &__contacts
-                    height: 100%
-                    width: 100%
-                    display: block
-                    &--button
-                        position: absolute
-                        transform: translate(-68%)
-                        left: 50%
-                        bottom: 250px
-                        background-color: #fdfdfd8f
-                        padding: 10px 20px
-                        font-size: 30px
-                        border-radius: 10px
-                        color: var(--asphalt-color)
-                        white-space: nowrap
-                        cursor: pointer
-                        &:hover
-                            background-color: var(--white-color)
-                        @media screen and (max-width: 760px)
-                            bottom: 110px
-                        @media screen and (max-width: 400px)
-                            font-size: 22px
-                    &--title
-                        position: absolute
-                        left: 50%
-                        transform: translate(-50%)
-                        top: 110px
-                        font-size: 41px
-                        font-weight: 500
-                        color: var(--asphalt-color)
-                        text-align: center
-                        background-color: #fdfdfd8f
-                        border-radius: 10px
-                        padding: 10px 10px
-                        max-width: 900px
-                        width: 100%
-                        @media screen and (max-width: 1000px)
-                            font-size: 30px
-                            max-width: 650px
-                        @media screen and (max-width: 760px)
-                            font-size: 18px
-                            max-width: 390px
-                        @media screen and (max-width: 400px)
-                            max-width: calc(100% - 20px)
-            .swiper-slide-visible
-                .banner__services
-                    @keyframes appearService
-                        0%
-                            opacity: 0
-                        30%
-                            opacity: 1
-                        100%
-                            opacity: 1
-                    .item
-                        opacity: 0
-                        animation: appearService 4s forwards .5s
-                        &:nth-child(2)
-                            animation-delay: 1s
-                        &:nth-child(3)
-                            animation-delay: 1.5s
-                        &:nth-child(4)
-                            animation-delay: 2s
-                .banner__contacts
-                    @keyframes appearContacts
-                        0%
-                            opacity: 0
-                            left: 0
-                        30%
-                            opacity: 1
-                            left: 50%
-                        100%
-                            opacity: 1
-                            left: 50%
-                    &--button
-                        animation: appearContacts 4s forwards
-                        animation-delay: 1.5s
-                        opacity: 0
+            //     &__contacts
+            //         height: 100%
+            //         width: 100%
+            //         display: block
+            //         &--button
+            //             position: absolute
+            //             transform: translate(-68%)
+            //             left: 50%
+            //             bottom: 250px
+            //             background-color: #fdfdfd8f
+            //             padding: 10px 20px
+            //             font-size: 30px
+            //             border-radius: 10px
+            //             color: var(--asphalt-color)
+            //             white-space: nowrap
+            //             cursor: pointer
+            //             &:hover
+            //                 background-color: var(--white-color)
+            //             @media screen and (max-width: 760px)
+            //                 bottom: 110px
+            //             @media screen and (max-width: 400px)
+            //                 font-size: 22px
+            //         &--title
+            //             position: absolute
+            //             left: 50%
+            //             transform: translate(-50%)
+            //             top: 110px
+            //             font-size: 41px
+            //             font-weight: 500
+            //             color: var(--asphalt-color)
+            //             text-align: center
+            //             background-color: #fdfdfd8f
+            //             border-radius: 10px
+            //             padding: 10px 10px
+            //             max-width: 900px
+            //             width: 100%
+            //             @media screen and (max-width: 1000px)
+            //                 font-size: 30px
+            //                 max-width: 650px
+            //             @media screen and (max-width: 760px)
+            //                 font-size: 18px
+            //                 max-width: 390px
+            //             @media screen and (max-width: 400px)
+            //                 max-width: calc(100% - 20px)
+            // // .swiper-slide-visible
+            //     .banner__services
+            //         @keyframes appearService
+            //             0%
+            //                 opacity: 0
+            //             30%
+            //                 opacity: 1
+            //             100%
+            //                 opacity: 1
+            //         .item
+            //             opacity: 0
+            //             animation: appearService 4s forwards .5s
+            //             &:nth-child(2)
+            //                 animation-delay: 1s
+            //             &:nth-child(3)
+            //                 animation-delay: 1.5s
+            //             &:nth-child(4)
+            //                 animation-delay: 2s
+            //     .banner__contacts
+            //         @keyframes appearContacts
+            //             0%
+            //                 opacity: 0
+            //                 left: 0
+            //             30%
+            //                 opacity: 1
+            //                 left: 50%
+            //             100%
+            //                 opacity: 1
+            //                 left: 50%
+            //         &--button
+            //             animation: appearContacts 4s forwards
+            //             animation-delay: 1.5s
+            //             opacity: 0
 
-                    &--title
-                        animation: appearContacts 4s forwards
-                        opacity: 0
+            //         &--title
+            //             animation: appearContacts 4s forwards
+            //             opacity: 0
     &__news
         margin-top: 20px
         &--title
@@ -256,12 +247,14 @@
                 margin: 0 auto 20px auto
                     
             .image
-                width: 450px
+                width: 100%
                 height: 300px
             .title
                 font-size: 20px
                 font-weight: 500
-                margin: 10px 20px
+                margin: 20px 15px
+            .content
+                font-size: 18px
             .date
                 font-size: 14px
                 color: var(--asphalt-color)

@@ -161,6 +161,12 @@ export const TRANSLATES = {
         eng: "Events",
         arb: "أحداث",
     },
+    products: {
+        rom: "Produse",
+        rus: "События",
+        eng: "Products",
+        arb: "أحداث",
+    },
     discussIdea: {
         rom: "pentru a discuta despre ideia ta",
         rus: "чтобы обсудить вашу идею",

@@ -10,6 +10,7 @@ import { useDispatch } from "react-redux";
 import { setLanguage } from "./redux/slices/languageSlice";
 import AboutUs from "Components/Pages/AboutUs/AboutUs";
 import { setToken } from "./redux/slices/tokenSlice";
+import Products from "Components/Pages/Products/Products";
 
 function App() {
     const location = useLocation();
@@ -43,6 +44,10 @@ function App() {
                 <Route
                     path='/admin'
                     element={<Admin />}
+                />
+                <Route
+                    path='/products'
+                    element={<Products />}
                 />
                 <Route
                     path='/about'

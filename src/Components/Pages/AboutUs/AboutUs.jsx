@@ -8,22 +8,19 @@ function AboutUs() {
     // @ts-ignore
     const currLanguage = useSelector((state) => state.language.language);
 
-    useEffect(() => {
-        const getAddressesApi = async () => {
-            let getAboutUs = await getBlock("about_us");
-            if (getAboutUs.status === 200) {
-                setContent(getAboutUs.data[0][`value_${currLanguage}`]);
-            }
-        };
-        getAddressesApi();
-    }, [currLanguage]);
+    // useEffect(() => {
+    //     const getAddressesApi = async () => {
+    //         let getAboutUs = await getBlock("about_us");
+    //         if (getAboutUs.status === 200) {
+    //             setContent(getAboutUs.data[0][`value_${currLanguage}`]);
+    //         }
+    //     };
+    //     getAddressesApi();
+    // }, [currLanguage]);
 
     return (
         <div className='about-page'>
-            <div
-                className='general-wrapper'
-                dangerouslySetInnerHTML={{ __html: content }}
-            />
+            <div className='general-wrapper'>TEST</div>
         </div>
     );
 }

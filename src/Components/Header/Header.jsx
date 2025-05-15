@@ -11,8 +11,8 @@ function Header({ isAdmin }) {
                 <Logo />
                 {!isAdmin && (
                     <>
-                        <Languages />
                         <Navigation />
+                        <Languages />
                     </>
                 )}
             </div>
