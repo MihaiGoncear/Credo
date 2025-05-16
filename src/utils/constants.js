@@ -1,14 +1,49 @@
 export const HEADER_NAV_LINKS = [
     { name: "home", path: "/" },
     { name: "aboutUs", path: "/about" },
-    { name: "products", path: "/products" },
-    { name: "events", path: "/news" },
+    // { name: "products", path: "/products" },
+    // { name: "events", path: "/news" },
     { name: "contacts", path: "/contacts" },
 ];
 
 export const LANGUAGES = ["rom", "rus", "eng", "arb"];
 
 export const NEWS = [
+    {
+        title: "Forumul Infrastructurii 2025 – Viitorul Drumurilor din Moldova",
+        content:
+            "Un eveniment cheie dedicat strategiilor naționale de dezvoltare rutieră. Experți din domeniu și factori de decizie discută proiectele viitoare și impactul lor asupra mobilității urbane și regionale.",
+        image: "/images/icons/news/10.png",
+        alias: "forum-infrastructura-2025",
+        date: "15 Martie 2025",
+    },
+    {
+        title: "Ziua Mobilității Urbane – Soluții Verzi pentru Orașe Inteligente",
+        content:
+            "Un eveniment interactiv ce promovează transportul sustenabil, infrastructura eco și inovația în mobilitate urbană. Include ateliere, expoziții și demonstrații live.",
+        image: "/images/icons/news/11.png",
+        alias: "ziua-mobilitatii-urbane-2025",
+        date: "9 Aprilie 2025",
+    },
+    {
+        title: "Hackathon: Drumuri Digitale – Soluții IT pentru Infrastructură",
+        content:
+            "Tineri dezvoltatori, ingineri și antreprenori se reunesc pentru a crea aplicații și soluții digitale care optimizează mentenanța, siguranța și eficiența drumurilor.",
+        image: "/images/icons/news/12.png",
+        alias: "hackathon-drumuri-digitale",
+        date: "28 Iunie 2025",
+    },
+    {
+        title: "Hackathon: Drumuri Digitale – Soluții IT pentru Infrastructură",
+        content:
+            "Tineri dezvoltatori, ingineri și antreprenori se reunesc pentru a crea aplicații și soluții digitale care optimizează mentenanța, siguranța și eficiența drumurilor.",
+        image: "/images/icons/news/13.png",
+        alias: "hackathon-drumuri-digitale",
+        date: "28 Iunie 2025",
+    },
+];
+
+export const PRODUCTS = [
     {
         title: "DOTS Spearmint – Claritate și Energie ascuțită.",
         content:

@@ -214,6 +214,22 @@
             //         &--title
             //             animation: appearContacts 4s forwards
             //             opacity: 0
+    &__aboutus
+        padding: 30px 20px
+        p 
+            margin-bottom: 1em
+        ul 
+            padding-left: 2em
+            margin-top: 0.5em
+
+        li 
+            margin-bottom: 0.5em
+        h3 
+            font-size: 1.4em
+            margin-top: 1.5em
+            margin-bottom: 10px
+            color: #444
+
     &__news
         margin-top: 20px
         &--title
@@ -235,12 +251,13 @@
                 @media screen and (max-width: 830px)
                     margin-left: 0
         &--item
-            flex: 0 0 calc(33.3333% - 10px)
+            flex: 0 0 calc(33.3333% - 20px)
             background-color: var(--white-color)
             border-radius: 5px
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
             overflow: hidden
             padding-bottom: 30px
+            margin: 10px
             @media screen and (max-width: 830px)
                 flex: 1 0 100%
                 max-width: 450px
@@ -259,6 +276,7 @@
                 font-size: 14px
                 color: var(--asphalt-color)
                 margin: 10px 20px
+        a
             &:hover
                 .title
                     text-decoration: underline

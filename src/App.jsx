@@ -11,6 +11,7 @@ import { setLanguage } from "./redux/slices/languageSlice";
 import AboutUs from "Components/Pages/AboutUs/AboutUs";
 import { setToken } from "./redux/slices/tokenSlice";
 import Products from "Components/Pages/Products/Products";
+import NewsInner from "Components/Pages/NewsInner/NewsInner";
 
 function App() {
     const location = useLocation();
@@ -42,12 +43,8 @@ function App() {
                     element={<Contacts />}
                 />
                 <Route
-                    path='/admin'
-                    element={<Admin />}
-                />
-                <Route
-                    path='/products'
-                    element={<Products />}
+                    path='/news/:slug'
+                    element={<NewsInner />}
                 />
                 <Route
                     path='/about'
