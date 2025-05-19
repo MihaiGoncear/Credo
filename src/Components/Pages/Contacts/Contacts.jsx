@@ -23,7 +23,7 @@ function Contacts() {
                             />
                         ))}
                     </div>
-                    <div className='contacts__reclamation'>
+                    {/* <div className='contacts__reclamation'>
                         <div className='title'>{TRANSLATES.leaveMessage[currLanguage]}:</div>
                         <div className='input-wrapper'>
                             <label htmlFor='name'>{TRANSLATES.nameSurname[currLanguage]}:</label>
@@ -59,7 +59,7 @@ function Contacts() {
                         <div className='input-wrapper'>
                             <button>Trimite</button>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className='contacts__map'>
                     <iframe

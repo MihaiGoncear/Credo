@@ -6,64 +6,50 @@ export const HEADER_NAV_LINKS = [
     { name: "contacts", path: "/contacts" },
 ];
 
-export const LANGUAGES = ["rom", "rus", "eng", "arb"];
+export const LANGUAGES = ["rom", "rus"];
 
 export const NEWS = [
     {
-        title: "Forumul Infrastructurii 2025 – Viitorul Drumurilor din Moldova",
-        content:
-            "Un eveniment cheie dedicat strategiilor naționale de dezvoltare rutieră. Experți din domeniu și factori de decizie discută proiectele viitoare și impactul lor asupra mobilității urbane și regionale.",
+        title: "power-up-challenge-title",
+        content: "power-up-challenge-content",
         image: "/images/icons/news/10.png",
-        alias: "forum-infrastructura-2025",
-        date: "15 Martie 2025",
+        alias: "power-up-challenge",
+        date: "2 Iunie 2025",
     },
     {
-        title: "Ziua Mobilității Urbane – Soluții Verzi pentru Orașe Inteligente",
-        content:
-            "Un eveniment interactiv ce promovează transportul sustenabil, infrastructura eco și inovația în mobilitate urbană. Include ateliere, expoziții și demonstrații live.",
+        title: "freestile-challenge-title",
+        content: "freestile-challenge-content",
         image: "/images/icons/news/11.png",
-        alias: "ziua-mobilitatii-urbane-2025",
-        date: "9 Aprilie 2025",
+        alias: "freestile-challenge",
+        date: "17 Iunie 2025",
     },
     {
-        title: "Hackathon: Drumuri Digitale – Soluții IT pentru Infrastructură",
-        content:
-            "Tineri dezvoltatori, ingineri și antreprenori se reunesc pentru a crea aplicații și soluții digitale care optimizează mentenanța, siguranța și eficiența drumurilor.",
-        image: "/images/icons/news/12.png",
-        alias: "hackathon-drumuri-digitale",
-        date: "28 Iunie 2025",
-    },
-    {
-        title: "Hackathon: Drumuri Digitale – Soluții IT pentru Infrastructură",
-        content:
-            "Tineri dezvoltatori, ingineri și antreprenori se reunesc pentru a crea aplicații și soluții digitale care optimizează mentenanța, siguranța și eficiența drumurilor.",
+        title: "eco-challenge-title",
+        content: "eco-challenge-content",
         image: "/images/icons/news/13.png",
-        alias: "hackathon-drumuri-digitale",
-        date: "28 Iunie 2025",
+        alias: "eco-challenge",
+        date: "2 Iulie 2025",
     },
 ];
 
 export const PRODUCTS = [
     {
-        title: "DOTS Spearmint – Claritate și Energie ascuțită.",
-        content:
-            "Un impuls rece care limpezește gândurile și aduce ordine în ritmul agitat al zilei. DOTS Spearmint activează o concentrare durabilă, fără excese și fără compromis. O alegere discretă, dar sigură pentru cei care știu ce au de făcut.",
+        title: "dots-spearmint-title",
+        content: "dots-spearmint-content",
         image: "/images/icons/products/4.png",
         alias: "proiecte-viitoare-de-infrastructura-rutiera",
         date: "23 Noiembrie 2024",
     },
     {
-        title: "DOTS Coffee – Gust intens. Energie curată.",
-        content:
-            "Eleganța amară a cafelei într-un format modern, fără ceașcă. DOTS Coffee este pentru cei care nu au timp de pauze, dar știu să le savureze. Energie rafinată, focus clar și o aromă care domină. Oriunde. Oricând.",
+        title: "dots-coffee-title",
+        content: "dots-coffee-content",
         image: "/images/icons/products/5.png",
         alias: "tehnologii-moderne-in-constructia-drumurilor",
         date: "16 Noiembrie 2024",
     },
     {
-        title: "DOTS Strawberry – Plăcerea care prinde viață.",
-        content:
-            "DOTS Strawberry nu doar energizează – seduce. Gustul intens de căpșună - exploziv, senzual și memorabil. Perfect pentru zile în care ai nevoie de un impuls care iese din tipare. Te aprinde... subtil.",
+        title: "dots-strawberry-title",
+        content: "dots-strawberry-content",
         image: "/images/icons/products/6.png",
         alias: "constructia-drumurilor-in-moldova-progrese-si-provocari",
         date: "12 Noiembrie 2024",
@@ -131,25 +117,19 @@ export const PARTNERS = [
 export const CONTACTS = [
     {
         title: "address",
-        content: "str. Varnita 2/10, Chișinău, Moldova",
+        content: "str. Pușkin 22",
         image: "/images/icons/contacts/address_icon.svg",
         type: "address",
     },
     {
         title: "clientsRelation",
-        content: "+373 22 123 456",
-        image: "/images/icons/contacts/phone_icon.svg",
-        type: "phone",
-    },
-    {
-        title: "contabilityPhone",
-        content: "+373 22 123 457",
+        content: "+373 604 11 155",
         image: "/images/icons/contacts/phone_icon.svg",
         type: "phone",
     },
     {
         title: "email",
-        content: "credo@gmail.com",
+        content: "dots.commercial@gmail.com",
         image: "/images/icons/contacts/email_icon.svg",
         type: "email",
     },

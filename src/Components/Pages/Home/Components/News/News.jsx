@@ -11,9 +11,8 @@ function News() {
     return (
         <div className='home__news'>
             <div className='home__news--title ui__title ui__display-justify-between ui__display-align-center'>
-                Evenimente
-                {/* {TRANSLATES.lastNews[currLanguage]} */}
-                {/* <Link to={"/news"}>{TRANSLATES.seeAll[currLanguage]} →</Link> */}
+                {TRANSLATES.lastNews[currLanguage]}
+                <Link to={"/news"}>{TRANSLATES.seeAll[currLanguage]} →</Link>
             </div>
             <div className='home__news--items ui__display-justify-between ui__rows'>
                 {NEWS.map((news, index) => (

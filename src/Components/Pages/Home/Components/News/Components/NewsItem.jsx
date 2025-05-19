@@ -1,7 +1,14 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { TRANSLATES } from "utils/translates";
 
 function NewsItem({ news }) {
-    const { title, alias, image, date, content } = news;
+    const { title, alias, image, date } = news;
+    // @ts-ignore
+    const currLanguage = useSelector((state) => state.language.language);
+
+    console.log(TRANSLATES[title]);
+
     return (
         <a
             href={`news/${alias}`}
@@ -12,8 +19,9 @@ function NewsItem({ news }) {
                 style={{ backgroundImage: `url(${image})` }}
             />
             <div className='date'>— {date}</div>
-            <div className='title ui__ff--noto ui__3-line-title '>{title}</div>
-            {/* <div className='content ui__ff--noto ui__3-line-title '>{content}</div> */}
+            <div className='title ui__ff--noto ui__3-line-title '>
+                {TRANSLATES[title][currLanguage]}
+            </div>
         </a>
     );
 }

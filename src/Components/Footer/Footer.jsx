@@ -32,7 +32,7 @@ function Footer() {
                     ))}
                 </div>
                 <p className='footer__text'>
-                    © {TRANSLATES.rights[currLanguage]} S.R.L. Credo Industry 2004 - {year}
+                    © {TRANSLATES.rights[currLanguage]} {year}
                 </p>
             </div>
         </footer>

@@ -15,27 +15,6 @@ function Banner() {
                 <ServicesBanner />
             </div>
         </div>
-        // <Swiper
-        //     className='home__banner'
-        //     wrapperClass='home__banner--wrapper ui__display-align-center'
-        //     spaceBetween={0}
-        //     slidesPerView={1}
-        //     loop={true}
-        //     autoplay={{ delay: 4000 }}
-        //     modules={[EffectFade, Autoplay]}
-        //     effect='fade'
-        //     speed={1000}
-        // >
-        //     <SwiperSlide>
-        //         <MottoBanner />
-        //     </SwiperSlide>
-        //     <SwiperSlide>
-        //         <ServicesBanner />
-        //     </SwiperSlide>
-        //     <SwiperSlide>
-        //         <ContactBanner />
-        //     </SwiperSlide>
-        // </Swiper>
     );
 }
 

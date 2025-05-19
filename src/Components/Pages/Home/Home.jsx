@@ -3,25 +3,20 @@ import "./Home.sass";
 import Banner from "./Components/Banner/Banner";
 import Products from "./Components/Products/Products";
 import News from "./Components/News/News";
+import { useSelector } from "react-redux";
+import { TRANSLATES } from "utils/translates";
 
 function Home() {
+    // @ts-ignore
+    const currLanguage = useSelector((state) => state.language.language);
+
     return (
         <div className='home'>
             <Banner />
             <div className='general-wrapper'>
                 <Products />
                 <div className='home__aboutus'>
-                    <p>
-                        Dots este un energizant (de tip snus) de nouă generație – fără nicotină,
-                        tutun sau zahăr în exces – creat pentru cei care trăiesc intens și nu vor să
-                        încetinească. Sub forma unui pliculeț (pouch) cu cafeină, Dots oferă focus
-                        și energie instant, oriunde ai nevoie: la birou, în sală sau în mijlocul
-                        acțiunii. Misiunea noastră este să oferim o alternativă curată și eficientă
-                        la energizantele clasice, iar viziunea noastră e clară – să redefinim modul
-                        în care lumea consumă energie. Cu valori precum inovația, calitatea,
-                        sustenabilitatea și comunitatea, Dots nu e doar un energizant, e upgrade-ul
-                        tău zilnic.
-                    </p>
+                    <p>{TRANSLATES["index-about-us-info"][currLanguage]}</p>
                 </div>
                 <News />
             </div>

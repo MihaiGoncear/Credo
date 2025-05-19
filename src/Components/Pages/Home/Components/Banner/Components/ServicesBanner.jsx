@@ -19,7 +19,7 @@ function ServicesBanner() {
             style={{ backgroundImage: "url(/images/banners/services-banner.jpg)" }}
         >
             {/* <div className='title ui__ff--noto'>{TRANSLATES.ourServices[currLanguage]}</div> */}
-            <div className='title ui__ff--roboto'>Produs Energizant Fara Nicotina</div>
+            <div className='title ui__ff--roboto'>{TRANSLATES.gabiBanner_fourth[currLanguage]}</div>
             <div className='banner__services--list general-wrapper'>
                 <Swiper
                     spaceBetween={0}
@@ -30,14 +30,14 @@ function ServicesBanner() {
                     speed={1000}
                 >
                     <SwiperSlide>
-                        <div className='item'>E momentul tau</div>
+                        <div className='item'>{TRANSLATES.gabiBanner_first[currLanguage]}</div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='item'>Activ. Oricand. Oriunde.</div>
+                        <div className='item'>{TRANSLATES.gabiBanner_second[currLanguage]}</div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='item'>
-                            Cand conteaza, ai <span>Dots</span>
+                            {TRANSLATES.gabiBanner_third[currLanguage]} <span>Dots</span>
                         </div>
                     </SwiperSlide>
                 </Swiper>
